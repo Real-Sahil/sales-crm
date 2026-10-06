@@ -78,7 +78,7 @@ export const OWNERS: Owner[] = OWNER_NAMES.map((name, i) => ({
   name,
   avatar: AVATARS[i % AVATARS.length],
   email: `${name.toLowerCase().replace(/\s+/g, ".")}@crm.com`,
-  phone: `+1 (202) ${String(199 + i).padStart(3, "0")}-${String(5520 + i * 37).slice(-4)}`,
+  phone: `+1 (202) ${String(199 + i).padStart(3, "0")}-${String(5520 + i * 37).padStart(4, "0").slice(-4)}`,
   role: i % 3 === 0 ? "Senior Account Executive" : "Account Executive",
 }));
 
